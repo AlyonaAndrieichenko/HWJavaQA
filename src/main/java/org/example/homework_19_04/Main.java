@@ -35,7 +35,7 @@ public class Main {
         for (int i = 0; i < integers.size(); i++) {
             sortedSet.add(integers.get(i));
         }
-        System.out.println("\nCount in TreeSet: " + uniqueSet.size());
+        System.out.println("\nCount in TreeSet: " + sortedSet.size());
         System.out.println(sortedSet);
         // мы не увидим разницы в выводе, потому что целочисленные значения в любой сет добавляются отсортированными
         // из-за особенностей хэширования
