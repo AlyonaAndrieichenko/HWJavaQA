@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3feb2218-8853-4977-be3b-dff84652dab6" name="Changes" comment="Homework 22/03/2024">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/homework_19_04/Main.java" afterDir="false" />
+    <list default="true" id="3feb2218-8853-4977-be3b-dff84652dab6" name="Changes" comment="Homework 19/04/2024">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/homework_19_04/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/homework_12_04/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +40,7 @@
     "Application.FirstTask.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.SecondTask.executor": "Run",
+    "Application.org.example.homework_12_04.Main.executor": "Run",
     "Application.org.example.homework_19_04.Main.executor": "Run",
     "JUnit.MyLinkedListTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -48,7 +49,7 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.org.example.homework_19_04.Main">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.homework_22_12.Main" />
       <module name="HWJavaQA" />
@@ -75,12 +76,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example.homework_19_04.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.homework_19_04.Main" />
+    <configuration name="org.example.homework_12_04.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.homework_12_04.Main" />
       <module name="HWJavaQA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.homework_19_04.*" />
+          <option name="PATTERN" value="org.example.homework_12_04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,7 +106,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.org.example.homework_19_04.Main" />
+        <item itemvalue="Application.org.example.homework_12_04.Main" />
         <item itemvalue="JUnit.MyLinkedListTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.org.example.homework_01_03_2024.Main" />
@@ -165,7 +166,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713119458115</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Homework 19/04/2024">
+      <option name="closed" value="true" />
+      <created>1713636583553</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713636583553</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Homework 19/04/2024">
+      <option name="closed" value="true" />
+      <created>1713636867103</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713636867103</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,6 +199,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Homework 22/12/2023" />
     <MESSAGE value="Homework 22/03/2024" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework 22/03/2024" />
+    <MESSAGE value="Homework 19/04/2024" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework 19/04/2024" />
   </component>
 </project>

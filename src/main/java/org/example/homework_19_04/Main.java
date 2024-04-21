@@ -1,73 +1,94 @@
 package org.example.homework_19_04;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-    //        Мини задачки на повторение прошлого урока, достаточно проделать то, что делали на уроке))
-    //Задание 1: Сгенерировать список из 500 целочисленных элементов
-    //Достаточно создать объект Random random = new Random();
-    //И в цикле добавлять случайное значение в список в виде int element = random.nextInt(10);
-    //Имея данный список и знания полученный об интерфейсе Set,
-    //вывести в консоль:
-    //1)отсортированный набор уникальных элементов
-    //2)набор только уникальных элементов
 
-        List<Integer> integers = new ArrayList<>();
-        Random random = new Random();
+    // Задача первая!
+    //Есть класс книга. У книги есть название, автор, год издания, количество страниц. Автор является отдельным классом
 
-        while (integers.size() < 500) {
-            integers.add(random.nextInt(500));
-            // по заданию не понятно, надо ли ставить ограничение, но я поставила, что бы наглядно показать, что в листе
-            // у нас повторяющиеся элементы, а в сете количество значительно уменьшится из-за уникальности
+        //У нескольких книг может быть один и тот же автор
+        Author stephenKing = new Author("Stephen", "King");
+
+        //Создать 10 книг и поместить их в список
+        Book detective = new Book("Sherlock Holmes", new Author("Arthur", "Conan Doyle"), 1887, 1392);
+        Book fantasy = new Book("The little prince", new Author("Antone", "de Saint-Exupery"), 1943, 161);
+        Book tragedy = new Book("Faust", new Author("Johann", "Wolfgang Goethe"), 1832, 480);
+        Book fairytale = new Book("Alice in Wonderland", new Author("Lewis", "Carroll"), 1865, 160);
+        Book dystopia = new Book("Fahrenheit 451", new Author("Ray", "Bradbury"), 1953, 224);
+        Book drama = new Book("Romeo and Juliet", new Author("William", "Shakespeare"), 1597, 384);
+        Book biography = new Book("Steve Jobs", new Author("Walter", "Isaacson"), 2015, 592);
+        Book horror = new Book("The Shining", stephenKing, 1977, 447);
+        Book darkFantasy = new Book("It", stephenKing, 1986, 1138);
+        Book gothic = new Book("The green mile", stephenKing, 1996, 496);
+
+        List<Book> bookList = Arrays.asList(
+                detective, fantasy, tragedy, fairytale, dystopia, drama, biography, horror, darkFantasy, gothic);
+
+        //Создать несколько вариантов сортировки:
+        //1- По названию книги,
+        //2- По имени автора,
+        //3-По количеству страниц у книги
+        //4-По году издания
+
+        System.out.println("Choose type of sort:" +
+                "\n 1 - By name of book" +
+                "\n 2 - By name of author" +
+                "\n 3 - By page count" +
+                "\n 4 - By year of publishing");
+
+        //С консоли запросить ввод варианта сортировки в виде числа от 1 до 4
+        //В зависимости от того, какое число ввели отсортировать коллекцию нужным компаратором
+
+        Scanner scanner = new Scanner(System.in);
+        int sortNum = scanner.nextInt();
+
+        while (sortNum < 1 || sortNum > 4) {
+            System.out.println("Please, choose 1, 2, 3, or 4");
+            sortNum = scanner.nextInt();
         }
-        System.out.println("Count in List: " + integers.size());
 
-        Set<Integer> uniqueSet = new HashSet<>();
-        for (int i = 0; i < integers.size(); i++) {
-            uniqueSet.add(integers.get(i));
+        if (sortNum == 1) {
+            Collections.sort(bookList, new SortByNameComparator());
+            System.out.println("Sorted by name of book: " + bookList);
+        } else if (sortNum == 2) {
+            Collections.sort(bookList, new SortByAuthorComparator());
+            System.out.println("Sorted by name of author:\n" + bookList);
+        } else if (sortNum == 3) {
+            Collections.sort(bookList, new SortByPagesComparator());
+            System.out.println("Sorted by page count:\n" + bookList);
+        } else {
+            Collections.sort(bookList, new SortByYearComparator());
+            System.out.println("Sorted by year of publishing:\n" + bookList);
         }
-        System.out.println("\nCount in HashSet: " + uniqueSet.size());
-        System.out.println(uniqueSet);
 
-        Set<Integer> sortedSet = new TreeSet<>();
-        for (int i = 0; i < integers.size(); i++) {
-            sortedSet.add(integers.get(i));
-        }
-        System.out.println("\nCount in TreeSet: " + sortedSet.size());
-        System.out.println(sortedSet);
-        // мы не увидим разницы в выводе, потому что целочисленные значения в любой сет добавляются отсортированными
-        // из-за особенностей хэширования
+        //Задача вторая!
 
-    //Задание 2:
-    //Взять две строки случайных символов, длина каждой строки от 20 до 50 символов.
-    //Вывести в консоль список символов которые встречаются только один раз на все две строки.
+        //Написать метод equals и hashcode для следующих классов:
 
-        String firstStr = generateRandomString();
-        System.out.println("\nFirst string length: " + firstStr.length());
-        String secondStr = generateRandomString();
-        System.out.println("Second string length: " + secondStr.length());
+        //public class Book {
+        //private String name;
+        //private Author author;
+        //
+        //public Book(String name, Author author) {
+        //    this.name = name;
+        //    this.author = author;
+        //}
+        //}
+        //
 
-        Set<Character> characterSet = new HashSet<>();
-        for (int i = 0; i < firstStr.length(); i++) {
-            characterSet.add(firstStr.charAt(i));
-        }
-        for (int i = 0; i < secondStr.length(); i++) {
-            characterSet.add(secondStr.charAt(i));
-        }
-        System.out.println("Unique characters for both strings: " + characterSet);
+        //public class Author {
+        //private String name;
+        //private String surname;
+        //public Author(String name, String surname) {
+        //    this.name = name;
+        //    this.surname = surname;
+        //}
+        //}
     }
-
-    private static String generateRandomString() {
-        Random random = new Random();
-        int strLength = random.nextInt(20, 50);
-        StringBuilder stringBuilder = new StringBuilder();
-        for (int i = 0; i < strLength; i++) {
-            stringBuilder.append((char) random.nextInt(Character.MAX_VALUE));
-            // было интересно рандомно сгенерировать, но не знаю, как получить знакомые нам символы, а не иероглифы))
-        }
-        return stringBuilder.toString();
-    }
-
 }
