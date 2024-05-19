@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3feb2218-8853-4977-be3b-dff84652dab6" name="Changes" comment="Homework 19/04/2024">
+    <list default="true" id="3feb2218-8853-4977-be3b-dff84652dab6" name="Changes" comment="Homework 12/04/2024 + 19/04/2024">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/homework_19_04/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/homework_12_04/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -39,7 +40,9 @@
   "keyToString": {
     "Application.FirstTask.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.PassengersQueue.executor": "Run",
     "Application.SecondTask.executor": "Run",
+    "Application.SoliterApp.executor": "Debug",
     "Application.org.example.homework_12_04.Main.executor": "Run",
     "Application.org.example.homework_19_04.Main.executor": "Run",
     "JUnit.MyLinkedListTest.executor": "Run",
@@ -49,7 +52,7 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.PassengersQueue">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.homework_22_12.Main" />
       <module name="HWJavaQA" />
@@ -63,12 +66,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example.homework_01_03_2024.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.homework_01_03_2024.Main" />
+    <configuration name="PassengersQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.homework_03_05.passengers.PassengersQueue" />
       <module name="HWJavaQA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.homework_01_03_2024.*" />
+          <option name="PATTERN" value="org.example.homework_03_05.passengers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SoliterApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.homework_03_05.soliter.SoliterApp" />
+      <module name="HWJavaQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.homework_03_05.soliter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,10 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PassengersQueue" />
+        <item itemvalue="Application.SoliterApp" />
         <item itemvalue="Application.org.example.homework_12_04.Main" />
         <item itemvalue="JUnit.MyLinkedListTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.org.example.homework_01_03_2024.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +199,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713636867103</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Homework 12/04/2024 + 19/04/2024">
+      <option name="closed" value="true" />
+      <created>1713714552146</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713714552146</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Homework 12/04/2024 + 19/04/2024">
+      <option name="closed" value="true" />
+      <created>1713714570174</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713714570174</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,6 +233,7 @@
     <MESSAGE value="Homework 22/12/2023" />
     <MESSAGE value="Homework 22/03/2024" />
     <MESSAGE value="Homework 19/04/2024" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework 19/04/2024" />
+    <MESSAGE value="Homework 12/04/2024 + 19/04/2024" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework 12/04/2024 + 19/04/2024" />
   </component>
 </project>
