@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3feb2218-8853-4977-be3b-dff84652dab6" name="Changes" comment="Homework 12/04/2024 + 19/04/2024">
+    <list default="true" id="3feb2218-8853-4977-be3b-dff84652dab6" name="Changes" comment="Homework 03/05/2024">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/homework_10_05/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/homework_10_05/BookStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/homework_10_05/BookStorageApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -16,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -38,6 +42,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BookStorageApp.executor": "Run",
     "Application.FirstTask.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.PassengersQueue.executor": "Run",
@@ -46,19 +51,29 @@
     "Application.org.example.homework_12_04.Main.executor": "Run",
     "Application.org.example.homework_19_04.Main.executor": "Run",
     "JUnit.MyLinkedListTest.executor": "Run",
+    "Maven.JavaQA [clean,install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "configurable.group.build"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.PassengersQueue">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.homework_22_12.Main" />
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.BookStorageApp">
+    <configuration name="BookStorageApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.homework_10_05.BookStorageApp" />
       <module name="HWJavaQA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.homework_22_12.*" />
+          <option name="PATTERN" value="org.example.homework_10_05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BookStorageApp" />
         <item itemvalue="Application.PassengersQueue" />
         <item itemvalue="Application.SoliterApp" />
         <item itemvalue="Application.org.example.homework_12_04.Main" />
         <item itemvalue="JUnit.MyLinkedListTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713714570174</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Homework 03/05/2024">
+      <option name="closed" value="true" />
+      <created>1716125277436</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1716125277436</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,6 +257,7 @@
     <MESSAGE value="Homework 22/03/2024" />
     <MESSAGE value="Homework 19/04/2024" />
     <MESSAGE value="Homework 12/04/2024 + 19/04/2024" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework 12/04/2024 + 19/04/2024" />
+    <MESSAGE value="Homework 03/05/2024" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework 03/05/2024" />
   </component>
 </project>
